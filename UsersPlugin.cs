@@ -17,7 +17,7 @@ public class UsersPlugin
     public UsersPlugin()
     {
         // Load users from JSON file
-        var json = File.ReadAllText("users.json");
+        var json = File.ReadAllText("D:\\TestProject\\Ollama\\OllamaKernelRepo\\OllamaKernel\\users.json");
         users = JsonSerializer.Deserialize<List<UserModel>>(json) ?? new List<UserModel>();
     }
 
